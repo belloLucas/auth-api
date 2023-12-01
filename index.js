@@ -10,13 +10,13 @@ const auththenticatedPage = require("./src/routes/authenticatedpage.js");
 const app = express();
 app.use(express.json());
 
-const port = process.env.port;
+const port = process.env.PORT || 3000;
 const dbUser = process.env.DB_USER;
 const dbPassword = process.env.DB_PASS;
 
 app.use("/", homepage);
 
-app.use("/auth/register", signup);
+app.use("/", signup);
 
 app.use("/", signIn);
 
