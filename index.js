@@ -6,6 +6,7 @@ const homepage = require("./src/routes/homepage.js");
 const signup = require("./src/routes/signup.js");
 const signIn = require("./src/routes/signIn.js");
 const auththenticatedPage = require("./src/routes/authenticatedpage.js");
+const changePassword = require("./src/routes/changePassword.js");
 
 const app = express();
 app.use(express.json());
@@ -21,6 +22,8 @@ app.use("/", signup);
 app.use("/", signIn);
 
 app.use("/", auththenticatedPage);
+
+app.use("/", changePassword);
 
 app.use((req, res) => {
   res.status(404).json({ msg: "Página não encontrada." });
