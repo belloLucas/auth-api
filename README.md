@@ -25,7 +25,7 @@ Este teste técnico consiste na criação de uma API RESTful que possibilita a a
 ### Como testar
 ---
 
-O deploy dessa API foi realizado no render.com. Ela pode ser acessada na seguinte url: https://auth-tech-test.onrender.com
+O deploy dessa API foi realizado no render.com. Ela pode ser acessada na seguinte url: `https://auth-tech-test.onrender.com`
 
 1. Para fazer os testes adequadamente, recomendo o uso do <a href="https://insomnia.rest/download">Insomnia</a>, basta clicar no link e instalar, sem muitas complicações;
 
