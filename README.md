@@ -34,7 +34,7 @@ O deploy dessa API foi realizado no render.com. Ela pode ser acessada na seguint
 3. Depois, já dentro da collection criada, podemos definir uma variável de ambiente, que vai conter o link de acesso da API. Para isso, aperte CTRL + E e dentro do corpo de "Base environment" cole o seguinte json:
   ```json
   {
-    "base_url": "https://auth-tech-test.onrender.com/"
+    "base_url": "https://auth-tech-test.onrender.com"
   }
   ```
 
