@@ -40,7 +40,7 @@ router.post("/auth/login", async (req, res) => {
     );
     res.status(200).json({ msg: "Usuário conectado com sucesso!", token });
   } catch (err) {
-    console.log(err);
+    // console.log(err);
     res
       .status(500)
       .json({ msg: "Ocorreu um erro, tente novamente mais tarde." });

@@ -2,11 +2,11 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 
-const homepage = require("./src/routes/homepage.js");
-const signup = require("./src/routes/signup.js");
-const signIn = require("./src/routes/signIn.js");
-const auththenticatedPage = require("./src/routes/authenticatedpage.js");
-const changePassword = require("./src/routes/changePassword.js");
+const homepage = require("./routes/homepage.js");
+const signup = require("./routes/signup.js");
+const signIn = require("./routes/signIn.js");
+const auththenticatedPage = require("./routes/authenticatedpage.js");
+const changePassword = require("./routes/changePassword.js");
 
 const app = express();
 app.use(express.json());
@@ -39,3 +39,5 @@ mongoose
     });
   })
   .catch((err) => console.log(err));
+
+module.exports = app;

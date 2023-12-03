@@ -8,10 +8,18 @@ const User = require("../models/User.js");
 router.post("/auth/register", async (req, res) => {
   const { name, email, phone, password, confirmPassword } = req.body;
 
-  if (!name) return res.status(400).json({ msg: "O nome é obrigatório" });
-  if (!email) return res.status(400).json({ msg: "O email é obrigatório" });
-  if (!phone) return res.status(400).json({ msg: "O telefone é obrigatório" });
-  if (!password) return res.status(400).json({ msg: "A senha é obrigatória" });
+  if (!name) {
+    return res.status(400).json({ msg: "O nome é obrigatório" });
+  }
+  if (!email) {
+    return res.status(400).json({ msg: "O email é obrigatório" });
+  }
+  if (!phone) {
+    return res.status(400).json({ msg: "O telefone é obrigatório" });
+  }
+  if (!password) {
+    return res.status(400).json({ msg: "A senha é obrigatória" });
+  }
   if (password !== confirmPassword) {
     return res.status(400).json({ msg: "As senhas devem ser as mesmas" });
   }
