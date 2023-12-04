@@ -40,7 +40,7 @@ O deploy dessa API foi realizado no render.com. Ela pode ser acessada na seguint
 
 4. Após a criação da variável, clique em close e crie uma nova requisição (HTTP Request) com o método HTTP desejado <strong>*cheque a listagem de endpoints para saber qual método cada endpoint usa</strong>;
 
-5. Na url da requisição, utilize a variavel criada digitando `_.base_url` com o endpoint vindo posteriormente a essa variável, ex: `_.base_url/auth/signup`;
+5. Na url da requisição, utilize a variavel criada digitando `_.base_url` com o endpoint vindo posteriormente a essa variável, ex: `_.base_url/auth/register`;
 
 6. Dependendo do endpoint escolhido, lembre-se de criar um corpo JSON contendo as informações necessárias;
 
