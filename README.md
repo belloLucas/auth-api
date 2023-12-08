@@ -1,6 +1,6 @@
-# 2º Desafio Técnico - Escribo
+# API de Autenticação
 
-Este teste técnico consiste na criação de uma API RESTful que possibilita a autenticação de usuários.
+Esse projetoconsiste na criação em uma API RESTful que possibilita a autenticação de usuários.
 
 #### Features:
 
@@ -9,6 +9,12 @@ Este teste técnico consiste na criação de uma API RESTful que possibilita a a
 - [X] Login de usuário
 
 - [X] Alteração de senha de usuário
+
+#### Tech Stack:
+- [X] Javascript
+- [X] NodeJs
+- [X] Express
+- [X] MongoDB
 
 #### Endpoints:
 
